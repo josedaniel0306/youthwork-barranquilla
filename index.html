@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouthWork Barranquilla</title>
+
+    <!-- Fuente Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Encabezado -->
+        <header class="main-header">
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <span class="logo-icon">
+                <i class="fa-solid fa-briefcase"></i>
+            </span>
+
+            <span class="logo-text">
+
+                YouthWork
+
+            </span>
+
+        </a>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html" class="active">Inicio</a></li>
+
+            <li><a href="vacantes.html">Vacantes</a></li>
+
+            <li><a href="academy.html">Academy</a></li>
+
+            <li><a href="nosotros.html">Nosotros</a></li>
+
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </ul>
+
+        <a href="login.html" class="login-btn" id="userButton">
+
+    <i class="fa-solid fa-user"></i>
+
+    <span>Iniciar sesión</span>
+
+</a>
+
+    </nav>
+    </header>
+    <section class="hero">
+
+    <div class="hero-text">
+
+        <span class="badge">
+            🚀 Plataforma #1 para Primer Empleo
+        </span>
+
+        <h1>
+            Tu primer empleo comienza aquí.
+        </h1>
+
+        <p>
+            YouthWork Barranquilla conecta jóvenes con empresas,
+            ofrece capacitaciones y te prepara para destacar en el mercado laboral.
+        </p>
+
+        <div class="hero-buttons">
+
+    <a href="vacantes.html" class="btn btn-primary">
+    🚀 Explorar Vacantes
+</a>
+
+<a href="registro.html" class="btn btn-secondary">
+    Crear cuenta
+</a>
+
+</div>
+
+    </div>
+
+   <div class="hero-image">
+
+    <div class="image-card">
+
+        <img src="img/hero.png" alt="Ilustración">
+
+    </div>
+
+</div>
+</section>
+<!-- BENEFICIOS -->
+
+<section class="benefits">
+
+    <div class="section-title">
+
+        <h2>¿Por qué elegir YouthWork?</h2>
+
+        <p>
+            Impulsamos el talento joven conectándolo con oportunidades laborales,
+            formación y empresas comprometidas con el primer empleo.
+        </p>
+
+    </div>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <div class="icon">🎯</div>
+
+            <h3>Primer Empleo</h3>
+
+            <p>
+                Encuentra vacantes pensadas para jóvenes que inician su vida laboral.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">📚</div>
+
+            <h3>Capacitaciones</h3>
+
+            <p>
+                Aprende con cursos gratuitos para fortalecer tu perfil profesional.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🤝</div>
+
+            <h3>Empresas Aliadas</h3>
+
+            <p>
+                Conecta con organizaciones que buscan talento joven.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="icon">🚀</div>
+
+            <h3>Crecimiento</h3>
+
+            <p>
+                Desarrolla habilidades que aumenten tus oportunidades laborales.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- VACANTES DESTACADAS -->
+
+<section class="jobs" id="vacantes">
+
+    <div class="section-title">
+        <h2>Vacantes Destacadas</h2>
+        <p>
+            Descubre oportunidades laborales para jóvenes en Barranquilla.
+        </p>
+    </div>
+
+    <div class="search-box">
+
+       <input type="text" id="searchInput" placeholder="Buscar empleo...">
+
+        <select>
+            <option>Barranquilla</option>
+            <option>Soledad</option>
+            <option>Puerto Colombia</option>
+        </select>
+
+        <a href="vacantes.html" class="btn-primary">
+    Buscar
+</a>
+
+    </div>
+
+    <div class="job-cards">
+
+        <div class="job-card">
+
+            <h3>Auxiliar Logístico</h3>
+
+           <p><i class="fa-solid fa-building"></i> Tecnoglass</p>
+
+<p><i class="fa-solid fa-location-dot"></i> Barranquilla</p>
+
+<p><i class="fa-solid fa-money-bill-wave"></i> $2.000.000</p>
+
+        <a href="detalle-vacante.html?id=1" class="btn-primary">
+    Ver detalles
+</a>
+
+        </div>
+
+        <div class="job-card">
+
+            <h3>Asesor Comercial</h3>
+
+          <p><i class="fa-solid fa-building"></i> Olímpica</p>
+
+<p><i class="fa-solid fa-location-dot"></i> Barranquilla</p>
+
+<p><i class="fa-solid fa-money-bill-wave"></i> $1.800.000</p>
+
+<a href="detalle-vacante.html?id=1" class="btn-primary">
+    Ver detalles
+</a>
+
+        </div>
+
+        <div class="job-card">
+
+            <h3>Auxiliar Administrativo</h3>
+
+           <p><i class="fa-solid fa-building"></i> Triple A</p>
+
+<p><i class="fa-solid fa-location-dot"></i> Barranquilla</p>
+
+<p><i class="fa-solid fa-money-bill-wave"></i> $1.900.000</p>
+
+<a href="detalle-vacante.html?id=1" class="btn-primary">
+    Ver detalles
+</a>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ESTADÍSTICAS -->
+
+<section class="stats">
+
+    <div class="stat">
+
+        <i class="fa-solid fa-user-graduate"></i>
+
+        <h2 class="counter" data-target="15000">0</h2>
+
+        <p>Jóvenes registrados</p>
+
+    </div>
+
+    <div class="stat">
+
+        <i class="fa-solid fa-building"></i>
+
+        <h2 class="counter" data-target="520">0</h2>
+
+        <p>Empresas aliadas</p>
+
+    </div>
+
+    <div class="stat">
+
+        <i class="fa-solid fa-briefcase"></i>
+
+        <h2 class="counter" data-target="2300">0</h2>
+
+        <p>Vacantes publicadas</p>
+
+    </div>
+
+    <div class="stat">
+
+        <i class="fa-solid fa-star"></i>
+
+        <h2 class="counter" data-target="95">0</h2>
+
+        <p>Satisfacción</p>
+
+    </div>
+
+</section>
+<section class="companies">
+
+    <div class="container">
+
+        <h2>Empresas que confían en YouthWork</h2>
+
+        <p>
+            Más de 500 empresas publican vacantes y encuentran talento joven con nosotros.
+        </p>
+
+        <div class="companies-grid">
+
+           <div class="company-card">
+    <img src="img/companies/tecnoglass.png" alt="Tecnoglass">
+</div>
+
+<div class="company-card">
+    <img src="img/companies/olimpica.png" alt="Olímpica">
+</div>
+
+<div class="company-card">
+    <img src="img/companies/triplea.png" alt="Triple A">
+</div>
+
+<div class="company-card">
+    <img src="img/companies/bancolombia.png" alt="Bancolombia">
+</div>
+
+<div class="company-card">
+    <img src="img/companies/exito.png" alt="Grupo Éxito">
+</div>
+
+<div class="company-card">
+    <img src="img/companies/nutresa.png" alt="Nutresa">
+</div>
+
+<div class="company-card">
+    <img src="img/companies/sura.png" alt="Sura">
+</div>
+
+<div class="company-card">
+    <img src="img/companies/alkosto.png" alt="Alkosto">
+</div>
+
+    </div>
+
+</section>
+<section class="testimonials">
+
+    <div class="container">
+
+        <h2>Lo que dicen nuestros usuarios</h2>
+
+        <p>
+            Miles de jóvenes ya encontraron su primer empleo gracias a YouthWork.
+        </p>
+
+        <div class="testimonial-grid">
+
+            <div class="testimonial-card">
+
+                <div class="avatar">👩</div>
+
+                <h3>María González</h3>
+
+                <span>Auxiliar Administrativa</span>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Gracias a YouthWork encontré mi primer empleo en menos de dos semanas. El proceso fue muy sencillo.
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="avatar">👨</div>
+
+                <h3>Carlos Pérez</h3>
+
+                <span>Asesor Comercial</span>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    Las capacitaciones me ayudaron muchísimo durante las entrevistas. Ahora trabajo en Olímpica.
+                </p>
+
+            </div>
+
+            <div class="testimonial-card">
+
+                <div class="avatar">👩</div>
+
+                <h3>Laura Martínez</h3>
+
+                <span>Analista Logística</span>
+
+                <div class="stars">★★★★★</div>
+
+                <p>
+                    La plataforma es rápida, intuitiva y encontré varias oportunidades laborales cerca de mi ciudad.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h2>YouthWork</h2>
+
+            <p>
+                Conectamos el talento joven con las mejores oportunidades laborales en Colombia.
+            </p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enlaces</h3>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vacantes.html">Vacantes</a></li>
+                <li><a href="academy.html">Academy</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Contacto</h3>
+
+            <p><i class="fa-solid fa-location-dot"></i> Barranquilla, Colombia</p>
+
+            <p><i class="fa-solid fa-envelope"></i> contacto@youthwork.com</p>
+
+            <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Síguenos</h3>
+
+            <div class="socials">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 YouthWork. Todos los derechos reservados.
+
+    </p>
+
+</footer>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+    <script src="js/navbar.js"></script>
+
+</body>
+</html>
+

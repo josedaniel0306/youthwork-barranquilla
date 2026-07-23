@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Vacantes | YouthWork</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header class="main-header">
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<span class="logo-icon">
+
+<i class="fa-solid fa-briefcase"></i>
+
+</span>
+
+<span class="logo-text">
+
+YouthWork
+
+</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Inicio</a></li>
+
+<li><a href="vacantes.html" class="active">Vacantes</a></li>
+
+<li><a href="academy.html">Academy</a></li>
+
+<li><a href="nosotros.html">Nosotros</a></li>
+
+<li><a href="contacto.html">Contacto</a></li>
+
+</ul>
+
+<a href="login.html" class="login-btn" id="userButton">
+
+    <i class="fa-solid fa-user"></i>
+
+    <span>Iniciar sesión</span>
+
+</a>
+
+</nav>
+
+
+</header>
+
+<main class="vacantes-page">
+
+    <!-- Barra superior -->
+
+    <section class="vacantes-hero">
+
+        <h1>Encuentra tu próximo empleo</h1>
+
+        <p>
+    Explora oportunidades laborales para jóvenes en Barranquilla y su área metropolitana.
+</p>
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="🔍 Buscar por cargo, empresa o municipio...">
+
+    </section>
+
+    <!-- Contenido -->
+
+    <section class="vacantes-content">
+
+        <!-- Filtros -->
+
+        <aside class="filters-panel">
+
+            <h3>Filtros</h3>
+
+            <div class="filter-group">
+
+    <label>Ciudad</label>
+
+    <select id="filtroCiudad">
+
+        <option value="Todas">Todas</option>
+
+        <option value="Barranquilla">Barranquilla</option>
+
+        <option value="Soledad">Soledad</option>
+
+        <option value="Malambo">Malambo</option>
+
+        <option value="Puerto Colombia">Puerto Colombia</option>
+
+    </select>
+
+</div>
+
+            <div class="filter-group">
+
+                <label>Modalidad</label>
+
+                <select>
+                    <option>Todas</option>
+                    <option>Presencial</option>
+                    <option>Remoto</option>
+                    <option>Híbrido</option>
+                </select>
+
+            </div>
+
+        </aside>
+
+        <!-- Vacantes -->
+
+        <section class="jobs-list">
+
+            <div
+                class="jobs-grid"
+                id="jobsContainer">
+
+            </div>
+
+        </section>
+
+    </section>
+
+</main>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h2>YouthWork</h2>
+
+            <p>
+                Conectamos el talento joven con las mejores oportunidades laborales en Colombia.
+            </p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enlaces</h3>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vacantes.html">Vacantes</a></li>
+                <li><a href="academy.html">Academy</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Contacto</h3>
+
+            <p><i class="fa-solid fa-location-dot"></i> Barranquilla, Colombia</p>
+            <p><i class="fa-solid fa-envelope"></i> info@youthwork.com</p>
+            <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Síguenos</h3>
+
+            <div class="socials">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 YouthWork. Todos los derechos reservados.
+
+    </p>
+
+</footer>
+
+<script src="js/vacantes.js"></script>
+<script src="js/navbar.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+/*======================================
+    AUTH - LOGIN Y REGISTRO
+======================================*/
+
+body{
+    background: linear-gradient(135deg, #eaf4ff, #ffffff);
+}
+
+/* Contenedor principal */
+
+.auth-container{
+
+    width:90%;
+    max-width:1300px;
+    margin:60px auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
+
+    align-items:center;
+
+}
+
+/* Panel izquierdo */
+
+.auth-info h1{
+
+    font-size:52px;
+
+    color:#0F172A;
+
+    margin-bottom:20px;
+
+}
+
+.auth-info p{
+
+    font-size:18px;
+
+    color:#64748B;
+
+    line-height:1.8;
+
+    margin-bottom:35px;
+
+}
+
+.auth-info img{
+
+    width:100%;
+    max-width:500px;
+
+    display:block;
+
+    margin:auto;
+
+}
+
+/* Tarjeta */
+
+.auth-card{
+
+    background:white;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.auth-card h2{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+    font-size:34px;
+
+    color:#0F172A;
+
+}
+
+/* Formulario */
+
+.auth-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+.auth-card input{
+
+    width:100%;
+
+    padding:16px;
+
+    border:1px solid #dbe4f0;
+
+    border-radius:14px;
+
+    font-size:16px;
+
+    transition:.3s;
+
+}
+
+.auth-card input:focus{
+
+    outline:none;
+
+    border-color:#2563EB;
+
+    box-shadow:0 0 0 4px rgba(37,99,235,.15);
+
+}
+
+/* Contraseña */
+
+.password-group{
+
+    position:relative;
+
+}
+
+.password-group input{
+
+    padding-right:50px;
+
+}
+
+.password-group i{
+
+    position:absolute;
+
+    right:18px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    cursor:pointer;
+
+    color:#64748B;
+
+    font-size:18px;
+
+}
+
+/* Seguridad */
+
+#passwordStrength{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#64748B;
+
+}
+
+/* Botón */
+
+.auth-card .btn-primary{
+
+    margin-top:10px;
+
+    width:100%;
+
+    padding:16px;
+
+    font-size:17px;
+
+    border-radius:14px;
+
+}
+
+/* Link */
+
+.login-link{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#64748B;
+
+}
+
+.login-link a{
+
+    color:#2563EB;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+.login-link a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* Responsive */
+
+@media(max-width:900px){
+
+    .auth-container{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .auth-info{
+
+        text-align:center;
+
+    }
+
+    .auth-info img{
+
+        max-width:320px;
+
+    }
+
+}

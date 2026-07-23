@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Registro | YouthWork</title>
+
+    <!-- CSS principal -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- CSS de autenticación -->
+    <link rel="stylesheet" href="css/auth.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+   <header class="main-header">
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<span class="logo-icon">
+
+<i class="fa-solid fa-briefcase"></i>
+
+</span>
+
+<span class="logo-text">
+
+YouthWork
+
+</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Inicio</a></li>
+
+<li><a href="vacantes.html">Vacantes</a></li>
+
+<li><a href="academy.html">Academy</a></li>
+
+<li><a href="nosotros.html">Nosotros</a></li>
+
+<li><a href="contacto.html">Contacto</a></li>
+
+</ul>
+
+<a href="login.html" class="login-btn" id="userButton">
+
+    <i class="fa-solid fa-user"></i>
+
+    <span>Iniciar sesión</span>
+
+</a>
+
+</nav>
+
+
+</header>
+
+<main class="auth-container">
+
+    <!-- Lado izquierdo -->
+
+    <section class="auth-info">
+
+        <h1>Únete a YouthWork</h1>
+
+        <p>
+
+            Crea tu cuenta y encuentra oportunidades laborales,
+            guarda tus vacantes favoritas y postúlate fácilmente.
+
+        </p>
+
+        <img
+        src="img/registro.svg"
+        alt="Registro">
+
+    </section>
+
+    <!-- Lado derecho -->
+
+    <section class="auth-card">
+
+        <h2>Crear cuenta</h2>
+        <p style="margin-bottom:25px;color:#64748B;">
+
+Completa el formulario para comenzar tu camino profesional.
+
+</p>
+
+        <form id="registerForm">
+
+           <input type="text" id="nombre" placeholder="Nombre" required>
+
+<input type="text" id="apellido" placeholder="Apellido" required>
+
+<input type="email" id="correo" placeholder="Correo electrónico" required>
+
+<div class="password-group">
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Contraseña"
+        required>
+
+    <i
+        class="fa-solid fa-eye"
+        id="togglePassword">
+    </i>
+
+</div>
+
+<div id="passwordStrength">
+
+    Seguridad de la contraseña
+
+</div>
+
+<input
+    type="password"
+    id="confirmPassword"
+    placeholder="Confirmar contraseña"
+    required>
+    <label style="display:flex;align-items:center;gap:10px;margin:15px 0;font-size:14px;">
+
+<input type="checkbox" required>
+
+Acepto los términos y condiciones.
+
+</label>
+
+           <button
+class="btn-primary"
+type="submit">
+
+<i class="fa-solid fa-user-plus"></i>
+
+Crear cuenta
+
+</button>
+
+        </form>
+
+        <p class="login-link">
+
+            ¿Ya tienes una cuenta?
+
+            <a href="login.html">
+
+                Inicia sesión
+
+            </a>
+
+        </p>
+
+    </section>
+
+</main>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h2>YouthWork</h2>
+
+            <p>
+                Conectamos el talento joven con las mejores oportunidades laborales en Colombia.
+            </p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enlaces</h3>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vacantes.html">Vacantes</a></li>
+                <li><a href="academy.html">Academy</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Contacto</h3>
+
+            <p><i class="fa-solid fa-location-dot"></i> Barranquilla, Colombia</p>
+
+            <p><i class="fa-solid fa-envelope"></i> contacto@youthwork.com</p>
+
+            <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Síguenos</h3>
+
+            <div class="socials">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 YouthWork. Todos los derechos reservados.
+
+    </p>
+
+</footer>
+
+<script src="js/auth.js"></script>
+<script src="js/navbar.js"></script>
+
+</body>
+
+</html>

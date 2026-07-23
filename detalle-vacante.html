@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Detalle de la Vacante | YouthWork</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header class="main-header">
+
+<nav class="navbar">
+
+<a href="index.html" class="logo">
+
+<span class="logo-icon">
+
+<i class="fa-solid fa-briefcase"></i>
+
+</span>
+
+<span class="logo-text">
+
+YouthWork
+
+</span>
+
+</a>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Inicio</a></li>
+
+<li><a href="vacantes.html" class="active">Vacantes</a></li>
+
+<li><a href="academy.html">Academy</a></li>
+
+<li><a href="nosotros.html">Nosotros</a></li>
+
+<li><a href="contacto.html">Contacto</a></li>
+
+</ul>
+
+<a href="login.html" class="login-btn" id="userButton">
+
+    <i class="fa-solid fa-user"></i>
+
+    <span>Iniciar sesión</span>
+
+</a>
+</nav>
+
+</header>
+
+<main class="detalle-page">
+
+<div class="detalle-card">
+
+<span class="badge" id="detalleModalidad"></span>
+
+<h1 id="detalleCargo"></h1>
+
+<h2 id="detalleEmpresa"></h2>
+<div class="job-actions" style="margin:20px 0;">
+
+    <span class="badge" id="detalleModalidad"></span>
+
+    <button class="favorite-btn" id="favoriteBtn">
+
+        <i class="fa-regular fa-heart"></i>
+
+    </button>
+
+</div>
+
+<p><i class="fa-solid fa-location-dot"></i>
+<span id="detalleCiudad"></span></p>
+
+<p><i class="fa-solid fa-money-bill-wave"></i>
+<span id="detalleSalario"></span></p>
+
+<p><i class="fa-solid fa-user"></i>
+<span id="detalleExperiencia"></span></p>
+
+<h3>Descripción</h3>
+
+<p id="detalleDescripcion"></p>
+
+<button class="btn-primary" id="btnPostular">
+
+    <i class="fa-solid fa-paper-plane"></i>
+
+    Postularme
+
+</button>
+
+<!-- MODAL -->
+
+<div class="modal" id="modalPostulacion">
+
+    <div class="modal-content">
+
+        <span class="close-modal" id="cerrarModal">&times;</span>
+
+        <h2>Postularme</h2>
+
+        <form id="formPostulacion">
+
+            <input
+            type="text"
+            placeholder="Nombre completo"
+            required>
+
+            <input
+            type="email"
+            placeholder="Correo electrónico"
+            required>
+
+            <input
+            type="tel"
+            placeholder="Teléfono"
+            required>
+
+            <input
+            type="text"
+            placeholder="Ciudad"
+            required>
+
+            <input
+            type="file"
+            accept=".pdf">
+
+            <button
+            class="btn-primary"
+            type="submit">
+
+                Enviar postulación
+
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
+
+</div>
+
+</main>
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-col">
+
+            <h2>YouthWork</h2>
+
+            <p>
+                Conectamos el talento joven con las mejores oportunidades laborales en Colombia.
+            </p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Enlaces</h3>
+
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="vacantes.html">Vacantes</a></li>
+                <li><a href="academy.html">Academy</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Contacto</h3>
+
+            <p><i class="fa-solid fa-location-dot"></i> Barranquilla, Colombia</p>
+            <p><i class="fa-solid fa-envelope"></i> info@youthwork.com</p>
+            <p><i class="fa-solid fa-phone"></i> +57 300 123 4567</p>
+
+        </div>
+
+        <div class="footer-col">
+
+            <h3>Síguenos</h3>
+
+            <div class="socials">
+
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <hr>
+
+    <p class="copyright">
+
+        © 2026 YouthWork. Todos los derechos reservados.
+
+    </p>
+
+</footer>
+
+<script src="js/detalle.js"></script>
+<script src="js/navbar.js"></script>
+
+</body>
+
+</html>
