@@ -19,7 +19,7 @@
     --text:#0F172A;
     --text-light:#64748B;
 
-    --shadow:0 10px 30px rgba(0,0,0,.08);
+    --shadow:0 10px 30px rgba(20, 10, 10, 0.08);
 
     --radius:18px;
 
@@ -1757,6 +1757,9 @@ HEADER GLOBAL
     background:#1D4ED8;
 
 }
+.mobile-login{
+    display:none;
+}
 /*==================================
 ACADEMY
 ==================================*/
@@ -2372,4 +2375,357 @@ width:100%;
 
 }
 
+}
+/* ==========================================
+   RESPONSIVE - TABLETS
+========================================== */
+
+@media (max-width: 992px){
+
+    .navbar{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .hero-image{
+        margin-top:30px;
+    }
+
+    .cards,
+    .job-cards,
+    .companies-grid,
+    .testimonial-grid,
+    .profile-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+/* ==========================================
+   RESPONSIVE - CELULARES
+========================================== */
+
+@media (max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero{
+        flex-direction:column;
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box input,
+    .search-box select,
+    .search-box button{
+        width:100%;
+    }
+
+    .cards,
+    .job-cards,
+    .companies-grid,
+    .testimonial-grid,
+    .profile-grid{
+        grid-template-columns:1fr;
+    }
+
+    .vacantes-content{
+        flex-direction:column;
+    }
+
+    .filters-panel{
+        width:100%;
+    }
+
+    .jobs-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+}
+/* ==========================
+   MENU HAMBURGUESA
+========================== */
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    font-size:28px;
+    color:#2563EB;
+    cursor:pointer;
+}
+
+.mobile-login{
+    display:none;
+}
+
+/* ==========================
+   CELULAR
+========================== */
+
+@media (max-width:768px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    /* ocultar botón de PC */
+    #userButton{
+        display:none !important;
+    }
+
+    .navbar{
+        height:auto;
+        flex-wrap:wrap;
+        padding:20px;
+    }
+
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        gap:18px;
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    /* mostrar botón dentro del menú */
+    .mobile-login{
+        display:block;
+        width:100%;
+        margin-top:15px;
+    }
+
+    .mobile-login .login-btn{
+        width:100%;
+        justify-content:center;
+        background:#2563EB;
+        color:#fff;
+        padding:14px;
+        border-radius:12px;
+    }
+}
+
+/* ==========================
+   ESCRITORIO
+========================== */
+
+@media (min-width:769px){
+
+    .menu-toggle{
+        display:none;
+    }
+
+    .nav-links{
+        display:flex !important;
+    }
+
+    .mobile-login{
+        display:none !important;
+    }
+
+    #userButton{
+        display:flex !important;
+    }
+}
+/* ===================================
+   RESPONSIVE PARA CELULARES
+=================================== */
+
+@media (max-width: 768px){
+
+    /* Header */
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .logo-text{
+        font-size: 24px;
+    }
+
+    /* Hero */
+    .hero{
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+    }
+
+    .hero-text,
+    .hero-image{
+        width: 100%;
+    }
+
+    .hero h1{
+        font-size: 38px;
+    }
+
+    .hero p{
+        font-size: 17px;
+    }
+
+    .hero-buttons{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* Tarjetas */
+    .cards,
+    .job-cards,
+    .jobs-grid,
+    .companies-grid,
+    .testimonial-grid,
+    .profile-grid{
+        grid-template-columns: 1fr;
+    }
+
+    /* Vacantes */
+    .vacantes-content{
+        grid-template-columns: 1fr;
+    }
+
+    .filters-panel{
+        position: static;
+        width: 100%;
+    }
+    #userButton{
+    display:none;
+}
+
+.mobile-login{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.mobile-login .login-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:90%;
+    padding:14px;
+
+    background:#2563EB;
+    color:#fff;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.mobile-login .login-btn:hover{
+    background:#1D4ED8;
+}
+
+    /* Estadísticas */
+    .stats{
+        grid-template-columns: repeat(2,1fr);
+        gap: 25px;
+    }
+
+    /* Footer */
+    .footer-container{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .socials{
+        justify-content: center;
+    }
+
+}
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size: 30px;
+    }
+
+    .section-title h2{
+        font-size: 30px;
+    }
+
+    .vacantes-hero h1{
+        font-size: 32px;
+    }
+
+    .stats{
+        grid-template-columns: 1fr;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .login-btn{
+        width: 100%;
+        justify-content: center;
+    }
+
+}
+/* ================================
+   MENÚ MÓVIL - LOGIN DENTRO DEL MENÚ
+================================ */
+
+.mobile-login{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+}
+
+.mobile-login .login-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:90%;
+    padding:14px;
+
+    background:#2563EB;
+    color:#fff;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.mobile-login .login-btn:hover{
+    background:#1D4ED8;
 }

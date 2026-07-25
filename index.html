@@ -38,18 +38,24 @@
 
         <ul class="nav-links">
 
-            <li><a href="index.html" class="active">Inicio</a></li>
+<li><a href="index.html">Inicio</a></li>
 
-            <li><a href="vacantes.html">Vacantes</a></li>
+<li><a href="vacantes.html">Vacantes</a></li>
 
-            <li><a href="academy.html">Academy</a></li>
+<li><a href="academy.html">Academy</a></li>
 
-            <li><a href="nosotros.html">Nosotros</a></li>
+<li><a href="nosotros.html">Nosotros</a></li>
 
-            <li><a href="contacto.html">Contacto</a></li>
+<li><a href="contacto.html">Contacto</a></li>
 
-        </ul>
+<li class="mobile-login">
+    <a href="login.html" class="login-btn">
+        <i class="fa-solid fa-user"></i>
+        <span>Iniciar sesión</span>
+    </a>
+</li>
 
+</ul>
         <a href="login.html" class="login-btn" id="userButton">
 
     <i class="fa-solid fa-user"></i>
@@ -57,6 +63,11 @@
     <span>Iniciar sesión</span>
 
 </a>
+<button class="menu-toggle" id="menuToggle">
+
+    <i class="fa-solid fa-bars"></i>
+
+</button>
 
     </nav>
     </header>
@@ -222,7 +233,7 @@
 
 <p><i class="fa-solid fa-location-dot"></i> Barranquilla</p>
 
-<p><i class="fa-solid fa-money-bill-wave"></i> $1.800.000</p>
+<p><i class="fa-solid fa-money-bill-wave"></i> $2.100.000</p>
 
 <a href="detalle-vacante.html?id=1" class="btn-primary">
     Ver detalles
@@ -238,7 +249,7 @@
 
 <p><i class="fa-solid fa-location-dot"></i> Barranquilla</p>
 
-<p><i class="fa-solid fa-money-bill-wave"></i> $1.900.000</p>
+<p><i class="fa-solid fa-money-bill-wave"></i> $2.000.000</p>
 
 <a href="detalle-vacante.html?id=1" class="btn-primary">
     Ver detalles
@@ -257,7 +268,7 @@
 
         <i class="fa-solid fa-user-graduate"></i>
 
-        <h2 class="counter" data-target="15000">0</h2>
+        <h2 class="counter" data-target="2000">0</h2>
 
         <p>Jóvenes registrados</p>
 
@@ -267,7 +278,7 @@
 
         <i class="fa-solid fa-building"></i>
 
-        <h2 class="counter" data-target="520">0</h2>
+        <h2 class="counter" data-target="65">0</h2>
 
         <p>Empresas aliadas</p>
 
@@ -277,7 +288,7 @@
 
         <i class="fa-solid fa-briefcase"></i>
 
-        <h2 class="counter" data-target="2300">0</h2>
+        <h2 class="counter" data-target="315">0</h2>
 
         <p>Vacantes publicadas</p>
 
@@ -478,6 +489,7 @@
     <!-- JavaScript -->
     <script src="js/script.js"></script>
     <script src="js/navbar.js"></script>
+    <script src="js/menu.js"></script>
 
 </body>
 </html>

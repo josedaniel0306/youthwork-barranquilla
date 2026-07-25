@@ -9,9 +9,9 @@ const jobs = [
         empresa:"Tecnoglass",
         cargo:"Auxiliar Logístico",
         ciudad:"Barranquilla",
-        salario:"$2.200.000",
+        salario:"$2.000.000",
         modalidad:"Presencial",
-        experiencia:"1 año"
+        experiencia:"Sin experiencia"
     },
 
     {
@@ -19,7 +19,7 @@ const jobs = [
         empresa:"Olímpica",
         cargo:"Asesor Comercial",
         ciudad:"Barranquilla",
-        salario:"$1.800.000",
+        salario:"$2.100.000",
         modalidad:"Tiempo completo",
         experiencia:"Sin experiencia"
     },
@@ -28,40 +28,40 @@ const jobs = [
         id:3,
         empresa:"Bancolombia",
         cargo:"Analista Administrativo",
-        ciudad:"Medellín",
+        ciudad:"Puerto Colombia",
         salario:"$3.000.000",
         modalidad:"Híbrido",
-        experiencia:"2 años"
+        experiencia:"1 años"
     },
 
     {
         id:4,
         empresa:"Grupo Éxito",
         cargo:"Auxiliar de Bodega",
-        ciudad:"Bogotá",
-        salario:"$1.900.000",
+        ciudad:"Malambo",
+        salario:"$2.000.000",
         modalidad:"Presencial",
-        experiencia:"6 meses"
+        experiencia:"Sin experiencia"
     },
 
     {
         id:5,
         empresa:"Claro",
         cargo:"Soporte Técnico",
-        ciudad:"Bogotá",
+        ciudad:"Barranquilla",
         salario:"$2.600.000",
         modalidad:"Remoto",
-        experiencia:"1 año"
+        experiencia:"6 meses"
     },
 
     {
         id:6,
         empresa:"Sura",
         cargo:"Analista de Talento Humano",
-        ciudad:"Medellín",
-        salario:"$3.400.000",
+        ciudad:"Soledad",
+        salario:"$2.400.000",
         modalidad:"Híbrido",
-        experiencia:"2 años"
+        experiencia:"6 meses"
     }
 
 ];
