@@ -2481,7 +2481,38 @@ width:100%;
     color:#2563EB;
     cursor:pointer;
 }
+.menu-toggle{
+    display:none;
+}
 
+@media (max-width:992px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    #userButton{
+        display:none;
+    }
+
+    .mobile-login{
+        display:flex;
+        justify-content:center;
+        margin-top:20px;
+    }
+}
 .mobile-login{
     display:none;
 }
