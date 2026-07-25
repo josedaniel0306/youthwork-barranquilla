@@ -78,43 +78,54 @@ header{
 
 }
 
-/*========== LOGO CORRECTO ==========*/
+/*========== LOGO ==========*/
 
 .logo{
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    text-decoration: none;
+    display:flex;
+    align-items:center;
+    gap:12px;
 }
 
-/* El cuadro/círculo del icono del maletín */
-.logo-icon, .logo-y{
-    width: 48px;
-    height: 48px;
-    background: #2563EB;
-    color: white;
-    border-radius: 14px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 22px;
-    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+.logo-y{
+    width:50px;
+    height:50px;
+
+    border-radius:50%;
+
+    background:#2563EB;
+
+    color:white;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-weight:700;
+    font-size:20px;
+
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
 }
 
-/* Texto YouthWork visible en azul oscuro */
-.logo-text, .logo h2{
-    color: #1E3A8A !important; /* Azul visible sobre el header blanco */
-    font-size: 26px;
-    font-weight: 700;
-    margin: 0;
-    line-height: 1;
+.logo-info h2{
+
+    color:#1E3A8A;
+
+    font-size:24px;
+
+    margin:0;
+
 }
 
 .logo-info p{
-    color: #64748B;
-    margin: 0;
-    font-size: 13px;
+
+    color:#64748B;
+
+    margin:0;
+
+    font-size:13px;
+
 }
+
 /* ===========================
    MENÚ
 =========================== */
@@ -1063,6 +1074,72 @@ footer hr{
     color:#94A3B8;
 
 }
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 992px){
+
+    .hero{
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .hero-text{
+        order: 2;
+    }
+
+    .hero-image{
+        order: 1;
+    }
+
+    .benefits-grid,
+    .jobs-grid,
+    .companies-grid,
+    .testimonial-grid{
+        grid-template-columns: 1fr;
+    }
+
+    .stats{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 576px){
+
+    nav{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .hero h1{
+        font-size: 38px;
+    }
+
+    .hero p{
+        font-size: 17px;
+    }
+
+    .stats{
+        grid-template-columns: 1fr;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+        text-align:center;
+    }
+
+    .socials{
+        justify-content:center;
+    }
+
+}
 .company-card img{
     max-width: 140px;
     max-height: 60px;
@@ -1460,6 +1537,23 @@ PERFIL
 
 }
 
+@media(max-width:900px){
+
+.profile-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.profile-header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+}
 /*====================================
 FAVORITOS
 ====================================*/
@@ -1555,6 +1649,18 @@ HEADER GLOBAL
 
 }
 
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    text-decoration:none;
+
+}
+
 .logo-icon{
 
     width:48px;
@@ -1574,6 +1680,16 @@ HEADER GLOBAL
     align-items:center;
 
     font-size:22px;
+
+}
+
+.logo-text{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#0F172A;
 
 }
 
@@ -1626,8 +1742,7 @@ HEADER GLOBAL
     font-weight:600;
 
     transition:.3s;
-
-    display:flex;
+     display:flex;
 
     align-items:center;
 
@@ -1642,7 +1757,9 @@ HEADER GLOBAL
     background:#1D4ED8;
 
 }
-
+.mobile-login{
+    display:none;
+}
 /*==================================
 ACADEMY
 ==================================*/
@@ -1841,6 +1958,21 @@ ACADEMY
 
 }
 
+@media(max-width:768px){
+
+.academy-hero h1{
+
+font-size:38px;
+
+}
+
+.academy-hero p{
+
+font-size:17px;
+
+}
+
+}
 .course-icon{
 
     width:80px;
@@ -1890,7 +2022,6 @@ ACADEMY
     color:#2563EB;
 
 }
-
 /*==================================
 NOSOTROS
 ==================================*/
@@ -2057,6 +2188,21 @@ NOSOTROS
 
 }
 
+@media(max-width:768px){
+
+.about-hero h1{
+
+font-size:38px;
+
+}
+
+.about-hero p{
+
+font-size:17px;
+
+}
+
+}
 /*==================================
 CONTACTO
 ==================================*/
@@ -2215,8 +2361,116 @@ CONTACTO
 
 }
 
+@media(max-width:900px){
+
+.contact-container{
+
+grid-template-columns:1fr;
+
+}
+
+.contact-form button{
+
+width:100%;
+
+}
+
+}
+/* ==========================================
+   RESPONSIVE - TABLETS
+========================================== */
+
+@media (max-width: 992px){
+
+    .navbar{
+        flex-direction: column;
+        gap:20px;
+    }
+
+    .hero{
+        flex-direction: column;
+        text-align:center;
+    }
+
+    .hero-image{
+        margin-top:30px;
+    }
+
+    .cards,
+    .job-cards,
+    .companies-grid,
+    .testimonial-grid,
+    .profile-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+}
+/* ==========================================
+   RESPONSIVE - CELULARES
+========================================== */
+
+@media (max-width:992px){
+
+    .navbar{
+        flex-direction:column;
+    }
+
+    .nav-links{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .hero{
+        flex-direction:column;
+        padding:40px 20px;
+    }
+
+    .hero h1{
+        font-size:2rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+    }
+
+    .search-box{
+        flex-direction:column;
+    }
+
+    .search-box input,
+    .search-box select,
+    .search-box button{
+        width:100%;
+    }
+
+    .cards,
+    .job-cards,
+    .companies-grid,
+    .testimonial-grid,
+    .profile-grid{
+        grid-template-columns:1fr;
+    }
+
+    .vacantes-content{
+        flex-direction:column;
+    }
+
+    .filters-panel{
+        width:100%;
+    }
+
+    .jobs-grid{
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+        text-align:center;
+    }
+
+}
 /* ==========================
-   MENU HAMBURGUESA BASE
+   MENU HAMBURGUESA
 ========================== */
 
 .menu-toggle{
@@ -2227,115 +2481,181 @@ CONTACTO
     color:#2563EB;
     cursor:pointer;
 }
+.menu-toggle{
+    display:none;
+}
+
+@media (max-width:992px){
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    #userButton{
+        display:none;
+    }
+
+    .mobile-login{
+        display:flex;
+        justify-content:center;
+        margin-top:20px;
+    }
+}
 
 .mobile-login{
     display:none;
 }
 
-/* ==========================================
-   RESPONSIVE - TABLETS ( <= 992px )
-========================================== */
+/* ==========================
+   CELULAR
+========================== */
 
-@media (max-width: 992px){
-
-    .hero{
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 50px;
-    }
-
-    .hero-text{
-        order: 2;
-    }
-
-    .hero-image{
-        order: 1;
-    }
-
-    .benefits-grid,
-    .jobs-grid,
-    .companies-grid,
-    .testimonial-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .stats{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    .footer-container{
-        grid-template-columns: 1fr 1fr;
-    }
-
-}
-
-/* ==========================================
-   RESPONSIVE - MÓVIL Y LANDSCAPE (HORIZONTAL)
-========================================== */
-
-@media (max-width: 768px), (max-height: 500px) and (orientation: landscape) {
+@media (max-width:992px){
 
     .menu-toggle{
-        display: block !important;
+        display:block;
+    }
+    .menu-toggle{
+    display:none;
+}
+
+@media (max-width:992px){
+
+    .menu-toggle{
+        display:block;
     }
 
-    /* Ocultar botón de PC */
+    .nav-links{
+        display:none;
+        flex-direction:column;
+        width:100%;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
     #userButton{
-        display: none !important;
+        display:none;
     }
 
-    nav, .navbar{
-        height: auto;
-        flex-wrap: wrap;
-        padding: 20px 0;
-    }
-
-    nav ul, .nav-links{
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        gap: 18px;
-        text-align: center;
-        margin-top: 20px;
-    }
-
-    nav ul.active, .nav-links.active{
-        display: flex !important;
-    }
-
-    /* Mostrar botón dentro del menú */
     .mobile-login{
-        display: flex !important;
-        justify-content: center;
-        margin-top: 15px;
-        width: 100%;
+        display:flex;
+        justify-content:center;
+        margin-top:20px;
+    }
+}
+
+    /* ocultar botón de PC */
+    #userButton{
+        display:none !important;
+    }
+
+    .navbar{
+        height:auto;
+        flex-wrap:wrap;
+        padding:20px;
+    }
+
+    .nav-links{
+        display:none;
+        width:100%;
+        flex-direction:column;
+        gap:18px;
+        text-align:center;
+        margin-top:20px;
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    /* mostrar botón dentro del menú */
+    .mobile-login{
+        display:block;
+        width:100%;
+        margin-top:15px;
     }
 
     .mobile-login .login-btn{
-        display: flex;
-        align-items: center;
+        width:100%;
+        justify-content:center;
+        background:#2563EB;
+        color:#fff;
+        padding:14px;
+        border-radius:12px;
+    }
+}
+
+/* ==========================
+   ESCRITORIO
+========================== */
+
+@media (min-width:769px){
+
+    .menu-toggle{
+        display:none;
+    }
+
+    .nav-links{
+        display:flex !important;
+    }
+
+    .mobile-login{
+        display:none !important;
+    }
+
+    #userButton{
+        display:flex !important;
+    }
+}
+/* ===================================
+   RESPONSIVE PARA CELULARES
+=================================== */
+
+@media (max-width: 768px){
+
+    /* Header */
+    .navbar{
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+        gap: 20px;
+    }
+
+    .nav-links{
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 10px;
-        width: 90%;
-        padding: 14px;
-        background: #2563EB;
-        color: #fff;
-        border-radius: 12px;
-        text-decoration: none;
-        font-weight: 600;
+        gap: 15px;
     }
 
-    .mobile-login .login-btn:hover{
-        background: #1D4ED8;
+    .logo-text{
+        font-size: 24px;
     }
 
-    /* Layout general móvil */
+    /* Hero */
     .hero{
         flex-direction: column;
-        padding: 40px 20px;
+        text-align: center;
+        padding: 50px 20px;
     }
 
-    .hero-text, .hero-image{
+    .hero-text,
+    .hero-image{
         width: 100%;
     }
 
@@ -2348,28 +2668,21 @@ CONTACTO
     }
 
     .hero-buttons{
-        flex-direction: column;
         justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .search-box{
-        flex-direction: column;
-    }
-
-    .search-box input,
-    .search-box select,
-    .search-box button{
-        width: 100%;
-    }
-
+    /* Tarjetas */
     .cards,
     .job-cards,
+    .jobs-grid,
     .companies-grid,
     .testimonial-grid,
     .profile-grid{
         grid-template-columns: 1fr;
     }
 
+    /* Vacantes */
     .vacantes-content{
         grid-template-columns: 1fr;
     }
@@ -2378,12 +2691,43 @@ CONTACTO
         position: static;
         width: 100%;
     }
+    #userButton{
+    display:none;
+}
 
+.mobile-login{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.mobile-login .login-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:90%;
+    padding:14px;
+
+    background:#2563EB;
+    color:#fff;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.mobile-login .login-btn:hover{
+    background:#1D4ED8;
+}
+
+    /* Estadísticas */
     .stats{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(2,1fr);
         gap: 25px;
     }
 
+    /* Footer */
     .footer-container{
         grid-template-columns: 1fr;
         text-align: center;
@@ -2393,60 +2737,7 @@ CONTACTO
         justify-content: center;
     }
 
-    .profile-grid{
-        grid-template-columns: 1fr;
-    }
-
-    .profile-header{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .academy-hero h1, .about-hero h1{
-        font-size: 38px;
-    }
-
-    .academy-hero p, .about-hero p{
-        font-size: 17px;
-    }
-
-    .contact-container{
-        grid-template-columns: 1fr;
-    }
-
-    .contact-form button{
-        width: 100%;
-    }
 }
-
-/* ==========================================
-   ESCRITORIO
-========================================== */
-
-@media (min-width: 769px) and (min-height: 501px){
-
-    .menu-toggle{
-        display: none !important;
-    }
-
-    nav ul, .nav-links{
-        display: flex !important;
-        flex-direction: row !important;
-    }
-
-    .mobile-login{
-        display: none !important;
-    }
-
-    #userButton{
-        display: flex !important;
-    }
-}
-
-/* ==========================================
-   PANTALLAS PANTALLAS MUY PEQUEÑAS ( <= 480px )
-========================================== */
-
 @media (max-width: 480px){
 
     .hero h1{
@@ -2472,4 +2763,33 @@ CONTACTO
         justify-content: center;
     }
 
+}
+/* ================================
+   MENÚ MÓVIL - LOGIN DENTRO DEL MENÚ
+================================ */
+
+.mobile-login{
+    margin-top:20px;
+    display:flex;
+    justify-content:center;
+}
+
+.mobile-login .login-btn{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    width:90%;
+    padding:14px;
+
+    background:#2563EB;
+    color:#fff;
+    border-radius:12px;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.mobile-login .login-btn:hover{
+    background:#1D4ED8;
 }
